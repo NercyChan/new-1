@@ -1025,7 +1025,7 @@ var capti = `🜲 𝗬𝗢𝗨𝗧𝗨𝗕𝗘 𝗣𝗟𝗔𝗬 🜲
 𖥸 Link Video : ${yut.videos[0].url}`
 ya = await getBuffer(thumb)
 py =await dha.prepareMessage(from, ya, image)
-sendButloc(from,monospace(capti),'',`DhaBotz`,
+sendButloc(from,monospace(capti),'',`NercyBotz`,
 [
 {buttonId: `${prefix}ytmp3 ${yut.all[0].url}`, buttonText: {displayText: 'AUDIO'}, type: 1}
 ,
@@ -1114,7 +1114,7 @@ case 'ytmp3':
                 case 'ttp2':
                 case 'ttp3':
                 case 'ttp4':
-                    if (args.length == 0) return reply(`Example: ${prefix + command} DhaBotz`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} NercyBotz`)
                     ini_txt = args.join(" ")
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/${command}?apikey=${setting.lolkey}&text=${ini_txt}`)
                     dha.sendMessage(from, ini_buffer, sticker, { quoted: mek })
