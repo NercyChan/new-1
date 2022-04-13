@@ -193,7 +193,7 @@ module.exports = dha = async (dha, mek) => {
         responseButton = (type == 'listResponseMessage') ? mek.message.listResponseMessage.title : ''
         
         const listmsg = (from, title, desc, list) => { // ngeread nya pake rowsId, jadi command nya ga keliatan
-            let po = dha.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Pilih Disini","footerText": "©yudha perdana","listType": "SINGLE_SELECT","sections": list}}, {})
+            let po = dha.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Pilih Disini","footerText": "©Evril","listType": "SINGLE_SELECT","sections": list}}, {})
             return dha.relayWAMessage(po, {waitForAck: true})
 }
   //button       
@@ -1295,7 +1295,7 @@ case 'linkgc':
              for (let _ of anu100) {
              dha.sendMessage(_.jid, 
 			{"contentText": `*「 PESAN SIARAN BOT 」*\n\n${body.slice(4)}`,
-			"footerText": '©yudha perdana',
+			"footerText": '©Evril',
 			"buttons": [
 			{"buttonId": `.menu`,
 			"buttonText": {"displayText": "MENU"
