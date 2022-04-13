@@ -713,8 +713,7 @@ headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude
               dha.sendMessage(from, teks, text, { quoted : mek })
               break              
  case 'yt':
-              teks = `Jangan Lupa Subrek Yt Owner :
-              https://youtube.com/channel/UCTeJJ6Kyhh3aAq8NY6QV-gQ`
+              teks = `Jangan Lupa Subrek YT owner :https://youtu.be/fBmDQ2KiQmQ`
               dha.sendMessage(from, teks, text, { quoted : mek })
               break                   
  case 'ig':
